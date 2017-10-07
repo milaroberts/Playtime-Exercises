@@ -1,0 +1,17 @@
+bread = 4
+peanut_butter = 3
+jelly = 2
+pbjs = 0
+
+if bread >= 2 and peanut_butter >= 1 and jelly >= 1:
+	print "I can make a peanut butter and jelly sandwich"
+else:
+	print "Looks like I don't have a lunch today"
+
+while bread >= 2 and peanut_butter >= 1 and jelly >= 1:
+	print "I am making a sandwich"
+	bread = bread - 2
+	peanut_butter = peanut_butter - 1
+	jelly = jelly - 1
+	pbjs = pbjs + 1
+print "I can make {0} sandwiches".format(pbjs)
